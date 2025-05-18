@@ -238,7 +238,9 @@ function openModal(imageSrc) {
   modal.style.display = "block";
   modalImg.src = imageSrc;
 }
+openModal()
 
 function closeModal() {
   document.getElementById("imageModal").style.display = "none";
 }
+closeModal()
