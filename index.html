@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravAi 2.0</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Assests/android-chrome-512x512.png" type="image/x-icon">
+    
+    <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+  </head>
+  <body>
+    <div id="main" data-scroll-container>
+      <div id="page" data-scroll data-scroll-speed="-5">
+        <div class="nav-bar">
+          <img id="#my-Logo" src="Assests/t.png" alt="" />
+          <div class="nav-bar-left">
+            <a href="">Home</a>
+            <a href="#page2">Explore</a>
+            <a href="#page4">Gallery</a>
+            <a href="#page5">Contact</a>
+          </div>
+        </div>
+        <div class="hero-section" data-scroll>
+          <h1>Travel Trip With TRAVAI</h1>
+          <p class="page-p">
+            AI-powered travel planner <br />
+            for smart, seamless adventures worldwide.
+          </p>
+
+          <button id="aibtn" class="aibtn">✨ Ask TRAVAI</button>
+        </div>
+        <div id="webchat" style="width: 80vw; height: 90vh"></div>
+      </div>
+      <div id="page2" data-scroll-section data-scroll data-scroll-speed="-5">
+        <div class="text-box">
+          <h2>
+            Discover hidden gems around the world • Plan your next adventure
+            with AI-powered travel tips • Capture unforgettable moments •
+            Explore tropical beaches, snowy peaks, and vibrant cities •
+            Personalized itineraries just for you • Travel smart, travel light •
+            Your journey starts here with TravAI • Let the world be your
+            playground • Go beyond the map with intelligent exploration • Pack
+            your bags and let AI be your guide!
+          </h2>
+        </div>
+        <div class="explore-content">
+          <h1>Discover the World with TravAi</h1>
+          <p>
+            Explore curated travel destinations powered by advanced AI. Whether
+            you’re chasing sunsets in Santorini, hiking the Himalayas, or
+            uncovering hidden gems in your own city — TravAi gives you
+            personalized suggestions, live itineraries, and intelligent travel
+            insights to turn every trip into an unforgettable journey.
+          </p>
+        </div>
+        <div id="my-image-container">
+          <div class="image-div">
+            <img
+              src="Assests/1.webp"
+              alt=""
+            />
+            <img
+              src="Assests/2.webp"
+              alt=""
+            />
+          </div>
+          <div class="image-div" id="image-div2">
+            <img
+              src="Assests/3.webp"
+              alt=""
+            />
+            <img
+              src="Assests/4.webp"
+              alt=""
+            />
+          </div>
+          <div class="image-div" id="image-div3">
+            <img
+              src="Assests/5.webp"
+              alt=""
+            />
+            <img
+              src="Assests/6.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div id="page3" data-scroll-section data-scroll data-scroll-speed="5">
+        <div class="p3-main">
+          <div class="parent">
+            <canvas id="frame"></canvas>
+          </div>
+        </div>
+      </div>
+      <div id="page4" data-scroll-section data-scroll data-scroll-speed="-5">
+       <section id="travel-gallery">
+  <h2 class="gallery-title">Travel Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item"onclick="openModal('/Assests/photo-1718383538535-49ff3dd8c550.avif')">
+      <img src="/Assests/photo-1718383538535-49ff3dd8c550.avif" alt="image" />
+    </div>
+    <div class="gallery-item"onclick="openModal('/Assests/2.avif')">
+      <img src="/Assests/2.avif" alt="image" />
+    </div>
+    <div class="gallery-item"onclick="openModal('/Assests/3.avif')">
+      <img src="Assests/3.avif" alt="image" />
+    </div>
+    <div class="gallery-item"onclick="openModal('/Assests/4.avif')">
+      <img src="Assests/4.avif" alt="image" />
+    </div>
+    <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+
+  </div>
+</section>
+
+      </div>
+      <div id="page5" data-scroll data-scroll-section>
+        <footer>
+          <div class="container">
+            <div class="col-1">
+              <img src="Assests/t.png" alt="" />
+              <p>TravAi Developed By Roshan jha</p>
+            </div>
+            <div class="col-2">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#page">Home</a></li>
+                <li><a href="#page2">Explore</a></li>
+                <li><a href="#page4">Gallery</a></li>
+                <li><a href="#page5">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">GSAP</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">C++</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h3>Newsletter</h3>
+              <form>
+                <i class="ri-mail-line"></i>
+                <input type="email" placeholder="Enter your email" required />
+                <button><i class="ri-arrow-right-line"></i></button>
+              </form>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/hunk_roshan/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                <a href="https://github.com/RoshanKumarJha18" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/roshan-kumar-jha-23q61a6212" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-2">
+            <p>© 2025 | Made with ❤️ by Roshan Jha. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script
+      type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
