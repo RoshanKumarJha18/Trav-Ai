@@ -98,6 +98,18 @@ loco()
 function gsapanime() {
   var tl = gsap.timeline()
 
+  tl.from("#main",{
+    y: -1000,
+    duration: 1,
+    scrollTrigger: {
+      trigger: "#page1",
+      start: "top bottom",
+      end: "top 30%",
+      scrub: 4,
+      toggleActions: "play none none reset"
+    }
+  })
+
 
   tl.from(".nav-bar", {
     y: -1000,
